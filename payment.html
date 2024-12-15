@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./stylesheet1.css">
+</head>
+<body>
+  <div id="checkoutPage" class="checkout-page">
+
+     <!-- Order Summary Table -->
+     <div class="order-summary">
+      <h2>Order Summary</h2>
+      <table id="orderTable">
+          <thead>
+              <tr>
+                  <th>Medicine</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                  <th>Total</th>
+              </tr>
+          </thead>
+          <tbody id="orderTableBody"></tbody>
+          <tfoot>
+              <tr>
+                  <td colspan="3">Grand Total</td>
+                  <td id="grandTotal">$0.00</td>
+              </tr>
+          </tfoot>
+      </table>
+  </div>
+
+    <h2>Checkout</h2>
+    <form id="checkoutForm">
+        <h3>Personal Details</h3>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone Number" required>
+
+        <h3>Delivery Details</h3>
+        <textarea placeholder="Delivery Address" required></textarea>
+        <input type="date" placeholder="Preferred Delivery Date">
+
+        <h3>Payment Information</h3>
+        <input type="text" placeholder="Card Number" required>
+        <input type="text" placeholder="Expiry Date" required>
+        <input type="text" placeholder="CVV" required>
+
+        <button type="submit" id="payButton">Pay</button>
+    </form>
+</div>
+
+<script src="./payment.js"></script>
+  
+</body>
+</html>

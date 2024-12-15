@@ -1,0 +1,119 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+  }
+  /* CSS Reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.medicine-categories {
+    display: flex;
+    flex-direction: column;
+}
+
+.medicine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 20px;
+    
+}
+
+.medicine-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    
+}
+
+.medicine-item img {
+    flex: 1 1 30%;           /* Each item takes up 30% of the container (can grow and shrink) */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally within the item */
+    align-items: center;     /* Centers the image vertically within the item */
+    max-width: 100%;         /* Ensures the image doesn’t overflow its container */
+    height: 300px;           /* Fixed height for the flex items */
+    background-color: #f4f4f4; /* Optional: background color for visual distinction */
+    border-radius: 8px;      /* Optional: rounded corners */
+    overflow: hidden;        /* Ensures images that don't fit are clipped */
+}
+
+
+.medicine-item .quantity {
+    width: 60px;
+    text-align: center;
+}
+
+.order-summary table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-summary th, 
+.order-summary td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content:space-around;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    
+
+}
+
+.action-buttons button {
+    padding: 20px 20px;
+    background-color: #1d295d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.checkout-page {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 100px;
+}
+
+.checkout-page input,
+.checkout-page textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
